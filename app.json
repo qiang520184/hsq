@@ -1,16 +1,32 @@
 {
   "pages": [
     "pages/index/index",
+    "pages/trip/trip",
     "pages/me/me",
     "pages/logs/logs"
   ],
   "tabBar": {
+    "custom": false,
+    "color": "#8a8a8a",
+    "selectedColor": "#e83eda",
+    "borderStyle": "black",
+    "backgroundColor": "#ffffff",
     "list": [
       {
         "pagePath": "pages/index/index",
+        "iconPath": "public/icon/home1.png",
+        "selectedIconPath": "public/icon/home2.png",
         "text": "首页"
       },{
+        "pagePath": "pages/trip/trip",
+        "iconPath": "public/icon/xingcheng.png",
+        "selectedIconPath": "public/icon/xingcheng22.png",
+        "text": "行程"
+      }
+      ,{
         "pagePath": "pages/me/me",
+        "iconPath": "public/icon/me1.png",
+        "selectedIconPath": "public/icon/me2.png",
         "text": "我的"
       }
     ]

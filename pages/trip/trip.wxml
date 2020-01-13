@@ -1,0 +1,4 @@
+<!--pages/trip/trip.wxml-->
+<view>
+  <image src="../../public/img/lazy.png"></image>
+</view>
