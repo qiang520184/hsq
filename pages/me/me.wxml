@@ -1,4 +1,25 @@
 <!--pages/me/me.wxml-->
 <view>
-  这家伙很懒 现在什么都没有
+	<view class="userinfo">
+		<!-- <button wx:if="{{!hasUserInfo && canIUse}}" open-type="getUserInfo" bindgetuserinfo="getUserInfo"> 获取头像昵称 </button> -->
+
+		<view class="userinfo-left">
+			<image bindtap="bindViewTap" class="userinfo-avatar" src="{{userInfo.avatarUrl}}" mode="cover"></image>
+		</view>
+		<view class="userinfo-right">
+			<view class="userinfo-nickname">姓名：{{userInfo.nickName}}</view>
+			<view class="userinfo-box">
+				<view class="wxcode">微信号：1231eqweqweqwe</view>
+				<view class="userinfo-img">
+					<image src="../../public/icon/erweima.png"></image>
+					<image src="../../public/icon/jiantouyou.png"></image>
+				</view>
+			</view>
+		</view>
+	</view>
+  <view class="list">
+    <view wx:for="{{arr}}" wx:data-item="item" wx:key="index">
+		  {{item}}
+	  </view>
+	</view>
 </view>

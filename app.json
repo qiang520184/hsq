@@ -1,8 +1,10 @@
 {
   "pages": [
-    "pages/index/index",
-    "pages/trip/trip",
     "pages/me/me",
+    
+    "pages/index/index",
+
+    "pages/trip/trip",
     "pages/logs/logs"
   ],
   "tabBar": {
